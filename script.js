@@ -4,6 +4,7 @@ const searchForm = document.querySelector('#search-form');
 const cityInput = document.querySelector('#city-input');
 const weatherInfoContainer = document.querySelector('#weather-info-container');
 
+
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -15,6 +16,7 @@ searchForm.addEventListener('submit', (event) => {
         alert('กรุณาป้อนชื่อเมือง');
     }
 });
+
 
 async function getWeather(city) {
     weatherInfoContainer.innerHTML = `<p>กำลังโหลดข้อมูล...</p>`;
